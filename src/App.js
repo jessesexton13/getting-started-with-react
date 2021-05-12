@@ -1,7 +1,17 @@
 import "./App.css";
 
 function App() {
-  return <h1>Hello World!</h1>;
+  const name = "Alice";
+  const url = "https://www.thinkful.com/";
+  const linkText = "Thinkful";
+  const element = (
+    <p>
+      {" "}
+      Hey, {name}! Please visit <a href={url}>{linkText}</a>.
+    </p>
+  );
+
+  return element;
 }
 
 export default App;
