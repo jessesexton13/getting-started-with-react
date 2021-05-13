@@ -1,17 +1,14 @@
 import "./App.css";
+import WelcomeBack from "./WelcomeBack";
 
 function App() {
-  const name = "Alice";
-  const url = "https://www.thinkful.com/";
-  const linkText = "Thinkful";
-  const element = (
-    <p>
-      {" "}
-      Hey, {name}! Please visit <a href={url}>{linkText}</a>.
-    </p>
+  return (
+    <>
+      <WelcomeBack name="Joe" adjective="funny" />
+      <WelcomeBack name="Anna" adjective="clever" />
+      <WelcomeBack />
+    </>
   );
-
-  return element;
 }
 
 export default App;
